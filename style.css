@@ -1,0 +1,106 @@
+:root{
+  --primary-color : #282828;
+  --font-color: whitesmoke;
+  --headerspacing: 25px 0px;
+  --heavyfontweight:900;
+  --lightfontweight:300;
+  --primary-button-color:red;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  padding: var(--headerspacing);
+}
+
+header ul{
+  list-style-type: none;
+  display: flex;
+  gap:20px;
+  align-items:center;
+ }
+
+li img{
+  width:40px;
+}
+
+.logo{
+  font-weight: var(--heavyfontweight);
+}
+
+.burgericon{
+  margin-left:auto;
+}
+
+h1{
+  font-size:40px;
+  font-weight: var(--lightfontweight);
+  margin: 25px 30px;
+}
+
+.spaceimage img{
+  display: block;
+  width:100%;
+}
+
+
+
+.caption{
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+  padding:0px 25px;
+}
+
+button{
+  background-color: var(--primary-button-color);
+  align-self: center;
+  color:white;
+  border:none;
+  padding: 20px 20px;
+  border-radius: 6px;
+  cursor:pointer;
+}
+
+#hygge{
+position:relative;  
+}
+
+.imgbanner{
+  background-color: var(--primary-button-color);
+  border: none;
+  position:absolute;
+  top:282px;
+  left:0;
+}
+
+.chatbox{
+  position: fixed;
+  bottom:0;
+  right: 0;
+  display:flex;
+  background-color: yellow;
+  width:50px;
+  height:50px; 
+  border-radius: 50%;
+  
+  }
+
+.chatbox img{
+  width: 25px;
+  margin: auto;
+}
+
+.chatbox,
+button,
+ul li {
+  cursor: pointer;
+}
